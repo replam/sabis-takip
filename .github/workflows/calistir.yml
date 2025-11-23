@@ -1,0 +1,40 @@
+name: Sabis Takip
+
+on:
+  schedule:
+    # AÇIKLAMA: Türkiye saatiyle sabah 07:00 ile gece 02:00 arası çalışır.
+    # Her 20 dakikada bir kontrol eder.
+    # Kotayı bitirmemek için gece uyur.
+    - cron: '*/20 4-23 * * *' 
+  workflow_dispatch: # Elle çalıştırma butonu
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write # Dosyayı kaydetmek için izin
+
+    steps:
+      - name: Depoyu Çek
+        uses: actions/checkout@v3
+
+      - name: Python Kur
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      - name: Kütüphaneleri Yükle
+        run: |
+          pip install -r requirements.txt
+
+      - name: Robotu Çalıştır
+        run: python main.py
+
+      - name: Hafızayı Kaydet
+        run: |
+          git config --global user.name 'SabisRobot'
+          git config --global user.email 'robot@sabis.com'
+          git add sabis_hafiza.txt || echo "Dosya yok"
+          git commit -m "Not guncellendi" || echo "Degisiklik yok"
+          git push

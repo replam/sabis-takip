@@ -1,91 +1,49 @@
-📘 DERS BULUNAMADI
-   ✅ 2025
-📘 DERS BULUNAMADI
-   ✅ 2024
-📘 DERS BULUNAMADI
-   ✅ 2023
-📘 DERS BULUNAMADI
-   ✅ 2022
-📘 DERS BULUNAMADI
-   ✅ 2021
-📘 DERS BULUNAMADI
-   ✅ 2020
-📘 DERS BULUNAMADI
-   ✅ 2019
-📘 DERS BULUNAMADI
-   ✅ 2018
-📘 DERS BULUNAMADI
-   ✅ 2017
-📘 DERS BULUNAMADI
-   ✅ 2016
-📘 DERS BULUNAMADI
-   ✅ 2015
-📘 DERS BULUNAMADI
-   ✅ EEM203
 📘 ELEKTROMANYETİK ALAN TEORİSİ
    ✅ Ara Sınav
 📘 ELEKTROMANYETİK ALAN TEORİSİ
    ✅ Final
-📘 ELEKTROMANYETİK ALAN TEORİSİ
-   ✅ EEM305
 📘 İŞARETLER VE SİSTEMLER
    ✅ Ara Sınav
 📘 İŞARETLER VE SİSTEMLER
    ✅ Kısa Sınav
 📘 İŞARETLER VE SİSTEMLER
    ✅ Final
-📘 İŞARETLER VE SİSTEMLER
-   ✅ EEM309
 📘 ELEKTRİK MAKİNELERİ I
    ✅ Ara Sınav
 📘 ELEKTRİK MAKİNELERİ I
    ✅ Final
-📘 ELEKTRİK MAKİNELERİ I
-   ✅ EEM421
 📘 ELEKTRONİK III
    ✅ Ara Sınav
 📘 ELEKTRONİK III
-   ✅ 8,8 Kısa Sınav
+   ✅ Kısa Sınav
 📘 ELEKTRONİK III
-   ✅ 7,7 Kısa Sınav
+   ✅ Ödev
 📘 ELEKTRONİK III
-   ✅ 8,8 Ödev
-📘 ELEKTRONİK III
-   ✅ 7,7 Performans Görevi (Uygulama)
+   ✅ Performans Görevi (Uygulama)
 📘 ELEKTRONİK III
    ✅ Final
-📘 ELEKTRONİK III
-   ✅ EEM451
 📘 ELEKTRİK ENERJİSİ ÜRETİMİ
    ✅ Ara Sınav
 📘 ELEKTRİK ENERJİSİ ÜRETİMİ
    ✅ Ödev
 📘 ELEKTRİK ENERJİSİ ÜRETİMİ
    ✅ Final
-📘 ELEKTRİK ENERJİSİ ÜRETİMİ
-   ✅ EEM499
 📘 STAJ II
    ✅ Ara Sınav
 📘 STAJ II
    ✅ Final
-📘 STAJ II
-   ✅ IKY409
 📘 KİŞİSEL GELİŞİM
    ✅ Ara Sınav 96
 📘 KİŞİSEL GELİŞİM
    ✅ Ödev
 📘 KİŞİSEL GELİŞİM
    ✅ Final
-📘 KİŞİSEL GELİŞİM
-   ✅ MAT211
 📘 DİFERANSİYEL DENKLEMLER
    ✅ Ara Sınav
 📘 DİFERANSİYEL DENKLEMLER
    ✅ Final
-📘 PROJE HAZIRLAMA VE YÖNETİMİ (MÜHENDİSLİK-FEN)
+📘 DİFERANSİYEL DENKLEMLER
    ✅ Ara Sınav 100
-📘 PROJE HAZIRLAMA VE YÖNETİMİ (MÜHENDİSLİK-FEN)
-   ✅ Final
 📘 DİJİTAL OKURYAZARLIK
    ✅ Kısa Sınav 100
 📘 DİJİTAL OKURYAZARLIK

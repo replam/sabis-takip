@@ -2,6 +2,7 @@ import time
 import requests
 import os
 import difflib
+import re # Yazıları parçalamak için
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
@@ -17,6 +18,15 @@ CHAT_ID = "5018466961"
 HEDEF_LINK = "https://obs.sabis.sakarya.edu.tr/Ders"
 KAYIT_DOSYASI = "sabis_hafiza.txt"
 
+# BU KELİMELERİ GÖRÜRSE DİREKT ATLASIN (ÇÖP KUTUSU)
+YASAKLI_KELIMELER = [
+    "ALPER MERCAN", "Oran", "Çalışma Tipi", "Not", "Etki", 
+    "Tarih", "Açıklama", "Genel Duyuru", "Seçilen Dersler", 
+    "Ders Programı", "Sınav Takvimi", "Transkript", "Enstitü",
+    "Öğrenci Bilgi Sistemi", "SABİS", "Sakarya Üniversitesi",
+    "Öğretim", "Grubu", "SAU"
+]
+
 def bildirim_gonder(mesaj):
     try:
         url = f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage"
@@ -25,43 +35,50 @@ def bildirim_gonder(mesaj):
     except: pass
 
 def veriyi_guzellestir(ham_metin):
-    """
-    Sayfadaki satırları analiz eder.
-    Eğer bir satır NOT satırı ise (Sayı ile başlıyorsa), 
-    onun başına en son okuduğu DERS ismini ekler.
-    """
     satirlar = ham_metin.splitlines()
-    islenmis_liste = []
-    son_baslik = "Genel Duyuru" # İlk başta varsayılan başlık
+    temiz_liste = []
+    son_ders = "DERS BULUNAMADI"
 
     for satir in satirlar:
         satir = satir.strip()
-        if not satir: continue
-
-        # KRİTİK NOKTA: Not satırlarını tespit etme mantığı
-        # Senin attığın resimde not satırı "50 Ara Sınav" diye başlıyor (Rakamla).
-        # Ders isimleri ise harfle başlar.
+        if len(satir) < 2: continue
         
-        # Eğer satır bir RAKAM ile başlıyorsa, bu bir nottur.
-        if satir[0].isdigit() and len(satir) < 100:
-            # Bu satırı, hafızadaki son başlıkla birleştir
-            yeni_satir = f"👉 {son_baslik} \n   ↳ {satir}"
-            islenmis_liste.append(yeni_satir)
-        else:
-            # Rakamla başlamıyorsa bu bir ders ismidir (veya menü yazısıdır)
-            # Bunu hafızaya alalım
-            if len(satir) > 3: # Çok kısa (1-2 harflik) şeyleri ders sanmasın
-                son_baslik = satir
-            # Bu satırı olduğu gibi de listeye ekleyelim ki sayfa yapısı bozulmasın
-            islenmis_liste.append(satir)
+        # Yasaklı kelime varsa o satırı komple geç
+        if any(yasak in satir for yasak in YASAKLI_KELIMELER):
+            continue
 
-    return "\n".join(islenmis_liste)
+        # --- ANALİZ MANTIĞI ---
+        
+        # Eğer satır RAKAM ile başlıyorsa (Örn: "50 Ara Sınav 100")
+        # Bu bir sınav satırıdır.
+        if len(satir) > 0 and satir[0].isdigit():
+            # Satırı boşluklardan parçala: ['50', 'Ara', 'Sınav', '100']
+            parcalar = satir.split()
+            
+            # Eğer parçalar uygunsa işlem yap
+            if len(parcalar) >= 2:
+                # Baştaki oranı (50) atıyoruz. Geriye kalanları birleştiriyoruz.
+                # parcalar[1:] demek "birinci kelimeyi at, gerisini al" demek.
+                temiz_satir = " ".join(parcalar[1:]) 
+                
+                # Sadece içinde NOT (Rakam) olan satırları alalım ki boş satırlar gelmesin
+                # "Ara Sınav 100" -> Sonunda rakam var mı?
+                if parcalar[-1].isdigit() or parcalar[-1] in ["GR", "DZ", "YS"]: 
+                    yeni_format = f"📘 {son_ders}\n   ✅ {temiz_satir}"
+                    temiz_liste.append(yeni_format)
+        
+        else:
+            # Rakamla başlamıyorsa bu büyük ihtimalle DERS İSMİDİR.
+            # Ders isimleri büyük harf olur (veya parantez içerir)
+            if satir.isupper() or "MÜHENDİSLİK" in satir:
+                son_ders = satir
+
+    return "\n".join(temiz_liste)
 
 def farklari_bul(eski, yeni):
+    # Sadece 📘 (Ders işareti) ile başlayan yeni satırları bul
     diff = difflib.ndiff(eski.splitlines(), yeni.splitlines())
-    # Sadece + ile başlayan (yeni eklenen) satırları al
-    # Ama sadece bizim "👉" işareti koyduklarımızı (yani notları) alırsak daha temiz olur
-    return [l[2:].strip() for l in diff if l.startswith('+ ') and "👉" in l]
+    return [l[2:].strip() for l in diff if l.startswith('+ ') and "📘" in l]
 
 def robotu_calistir():
     print("🚀 GitHub Robotu Çalışıyor...")
@@ -84,7 +101,7 @@ def robotu_calistir():
         driver.find_element(By.ID, "btnLogin").click()
         time.sleep(3)
         
-        # 2. OBS GİRİŞ (Zorba Mod)
+        # 2. OBS GİRİŞ
         driver.get(HEDEF_LINK)
         time.sleep(3)
 
@@ -118,28 +135,27 @@ def robotu_calistir():
         
         time.sleep(5)
         
-        # 3. VERİ İŞLEME (EKLENEN KISIM)
+        # 3. VERİ ÇEKME
         ham_veri = driver.find_element(By.TAG_NAME, "body").text
         
-        # Ham veriyi alıp "Ders Adı -> Not" formatına çeviriyoruz
-        islenmis_veri = veriyi_guzellestir(ham_veri)
+        # VERİYİ TEMİZLE
+        yeni_veri = veriyi_guzellestir(ham_veri)
         
         if not os.path.exists(KAYIT_DOSYASI):
-            with open(KAYIT_DOSYASI, "w", encoding="utf-8") as f: f.write(islenmis_veri)
-            # İlk seferde mesaj atmasın, sessizce kaydetsin (veya istersen atabilir)
+            with open(KAYIT_DOSYASI, "w", encoding="utf-8") as f: f.write(yeni_veri)
+            # İlk seferde hafıza oluşturulur
             print("İlk kayıt alındı.")
+            # İstersen ilk çalıştığında mevcut durumunu görmek için alttakini aç:
+            # bildirim_gonder("Sistem Hazır! Mevcut Durum:\n\n" + yeni_veri)
         else:
             with open(KAYIT_DOSYASI, "r", encoding="utf-8") as f: eski_veri = f.read()
             
-            if islenmis_veri != eski_veri:
-                degisiklikler = farklari_bul(eski_veri, islenmis_veri)
+            if yeni_veri != eski_veri:
+                degisiklikler = farklari_bul(eski_veri, yeni_veri)
                 if degisiklikler:
-                    # Mesajı hazırla
                     mesaj = "📢 YENİ NOT GİRİLDİ!\n\n" + "\n\n".join(degisiklikler) + "\n\n🔗 obs.sabis.sakarya.edu.tr/Ders"
                     bildirim_gonder(mesaj)
-                    
-                    # Dosyayı güncelle
-                    with open(KAYIT_DOSYASI, "w", encoding="utf-8") as f: f.write(islenmis_veri)
+                    with open(KAYIT_DOSYASI, "w", encoding="utf-8") as f: f.write(yeni_veri)
             else:
                 print("Değişiklik yok.")
 

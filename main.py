@@ -17,14 +17,13 @@ CHAT_ID = "5018466961"
 HEDEF_LINK = "https://obs.sabis.sakarya.edu.tr/Ders"
 KAYIT_DOSYASI = "sabis_hafiza.txt"
 
-# YASAKLI KELİMELER (Bunları görünce direkt atlasın)
+# Bu kelimeleri içeren satırları direkt çöpe at
 YASAKLI_KELIMELER = [
     "ALPER MERCAN", "Oran", "Çalışma Tipi", "Not", "Etki", 
     "Tarih", "Açıklama", "Genel Duyuru", "Seçilen Dersler", 
     "Ders Programı", "Sınav Takvimi", "Transkript", "Enstitü",
     "Öğrenci Bilgi Sistemi", "SABİS", "Sakarya Üniversitesi",
-    "Öğretim", "Grubu", "SAU", "MÜHENDİSLİK FAKÜLTESİ", 
-    "Dönem", "Kredi", "AKTS"
+    "Öğretim", "Grubu", "SAU", "MÜHENDİSLİK"
 ]
 
 def bildirim_gonder(mesaj):
@@ -37,10 +36,7 @@ def bildirim_gonder(mesaj):
 def veriyi_guzellestir(ham_metin):
     satirlar = ham_metin.splitlines()
     temiz_liste = []
-    son_ders = "DERS BULUNAMADI"
-    
-    # Not olabilecek kelimeler
-    anahtar_kelimeler = ["Sınav", "Vize", "Final", "Ödev", "Proje", "Quiz", "Bütünleme"]
+    son_ders = None # Başlangıçta ders yok
 
     for satir in satirlar:
         satir = satir.strip()
@@ -50,38 +46,34 @@ def veriyi_guzellestir(ham_metin):
         if any(yasak in satir for yasak in YASAKLI_KELIMELER):
             continue
 
-        # --- YENİ ANALİZ MANTIĞI ---
+        # --- BASİT VE NET MANTIK ---
         
-        # 1. DERS ADI BULMA (Büyük harf ve uzunluk kontrolü)
-        # İçinde rakam olmayan, uzun ve büyük harfli satırlar derstir.
-        if satir.isupper() and len(satir) > 5 and not any(c.isdigit() for c in satir):
-            son_ders = satir
-            continue # Ders adını bulduk, sıradaki satıra geç
-
-        # 2. NOT SATIRI BULMA
-        # İçinde anahtar kelime geçiyorsa (Sınav, Ödev vs.) VEYA sonunda rakam varsa al.
-        kelime_var = any(kelime in satir for kelime in anahtar_kelimeler)
-        rakam_var = any(c.isdigit() for c in satir)
-        
-        if (kelime_var or rakam_var) and len(satir) < 80:
-            # Satırı temizle (Baştaki oran sayısını silmeye çalışalım)
-            parcalar = satir.split()
-            
-            # Eğer ilk kelime bir sayıysa (50, 40 gibi oranlar), onu at.
-            if len(parcalar) > 1 and parcalar[0].isdigit():
-                temiz_satir = " ".join(parcalar[1:])
-            else:
-                temiz_satir = satir
+        # 1. NOT SATIRI MI? (Rakamla başlıyorsa kesin nottur)
+        # Örnek: "50 Ara Sınav 100"
+        if satir[0].isdigit():
+            # Eğer henüz bir ders bulamadıysak bu çöp veridir (en tepedeki sayılar vs), geç.
+            if son_ders is None:
+                continue
                 
-            yeni_format = f"📘 {son_ders}\n   ✅ {temiz_satir}"
-            
-            # Aynı şeyi tekrar eklememek için kontrol
-            if yeni_format not in temiz_liste:
-                temiz_liste.append(yeni_format)
+            # Baştaki oranı (50'yi) temizleyelim
+            parcalar = satir.split()
+            if len(parcalar) > 1:
+                not_detayi = " ".join(parcalar[1:]) # "Ara Sınav 100"
+                
+                yeni_format = f"📘 {son_ders}\n   ✅ {not_detayi}"
+                
+                # Listede aynısı yoksa ekle
+                if yeni_format not in temiz_liste:
+                    temiz_liste.append(yeni_format)
+        
+        # 2. DERS ADI MI? (Büyük harfliyse ve rakamla başlamıyorsa derstir)
+        elif satir.isupper() and len(satir) > 4:
+            son_ders = satir
 
     return "\n".join(temiz_liste)
 
 def farklari_bul(eski, yeni):
+    # Sadece 📘 ile başlayan satırları kıyasla
     diff = difflib.ndiff(eski.splitlines(), yeni.splitlines())
     return [l[2:].strip() for l in diff if l.startswith('+ ') and "📘" in l]
 
@@ -98,7 +90,7 @@ def robotu_calistir():
     driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options)
 
     try:
-        # 1. GİRİŞ
+        # GİRİŞ İŞLEMLERİ
         driver.get("https://sabis.sakarya.edu.tr")
         time.sleep(2)
         driver.find_element(By.ID, "UserName").send_keys(OKUL_NO)
@@ -106,7 +98,6 @@ def robotu_calistir():
         driver.find_element(By.ID, "btnLogin").click()
         time.sleep(3)
         
-        # 2. OBS GİRİŞ
         driver.get(HEDEF_LINK)
         time.sleep(3)
 
@@ -140,15 +131,14 @@ def robotu_calistir():
         
         time.sleep(5)
         
-        # 3. VERİ ÇEKME
+        # VERİYİ ÇEK VE İŞLE
         ham_veri = driver.find_element(By.TAG_NAME, "body").text
-        
-        # VERİYİ GÜZELLEŞTİR
         yeni_veri = veriyi_guzellestir(ham_veri)
         
         if not os.path.exists(KAYIT_DOSYASI):
             with open(KAYIT_DOSYASI, "w", encoding="utf-8") as f: f.write(yeni_veri)
-            print("İlk kayıt alındı.")
+            # İlk seferde tüm notları görmek için bunu açtım:
+            bildirim_gonder("✅ Sistem Hazır! İşte mevcut notların:\n\n" + yeni_veri)
         else:
             with open(KAYIT_DOSYASI, "r", encoding="utf-8") as f: eski_veri = f.read()
             

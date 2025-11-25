@@ -9,22 +9,13 @@ from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.chrome.options import Options
 
-# --- SENİN BİLGİLERİN ---
+# --- SENİN BİLGİLERİN (GÖMÜLÜ) ---
 OKUL_NO = "b220100041"
 SIFRE = "Alperharbidelirdi54?"
 TELEGRAM_TOKEN = "7920565399:AAHIKSzYVzhpL-_1BJKMYDfdd5nUWlEHEtw"
 CHAT_ID = "5018466961"
 HEDEF_LINK = "https://obs.sabis.sakarya.edu.tr/Ders"
 KAYIT_DOSYASI = "sabis_hafiza.txt"
-
-# Bu kelimeleri içeren satırları direkt çöpe at
-YASAKLI_KELIMELER = [
-    "ALPER MERCAN", "Oran", "Çalışma Tipi", "Not", "Etki", 
-    "Tarih", "Açıklama", "Genel Duyuru", "Seçilen Dersler", 
-    "Ders Programı", "Sınav Takvimi", "Transkript", "Enstitü",
-    "Öğrenci Bilgi Sistemi", "SABİS", "Sakarya Üniversitesi",
-    "Öğretim", "Grubu", "SAU", "MÜHENDİSLİK"
-]
 
 def bildirim_gonder(mesaj):
     try:
@@ -33,53 +24,15 @@ def bildirim_gonder(mesaj):
         requests.post(url, data=data)
     except: pass
 
-def veriyi_guzellestir(ham_metin):
-    satirlar = ham_metin.splitlines()
-    temiz_liste = []
-    son_ders = None # Başlangıçta ders yok
-
-    for satir in satirlar:
-        satir = satir.strip()
-        if len(satir) < 2: continue
-        
-        # Yasaklı kelime varsa geç
-        if any(yasak in satir for yasak in YASAKLI_KELIMELER):
-            continue
-
-        # --- BASİT VE NET MANTIK ---
-        
-        # 1. NOT SATIRI MI? (Rakamla başlıyorsa kesin nottur)
-        # Örnek: "50 Ara Sınav 100"
-        if satir[0].isdigit():
-            # Eğer henüz bir ders bulamadıysak bu çöp veridir (en tepedeki sayılar vs), geç.
-            if son_ders is None:
-                continue
-                
-            # Baştaki oranı (50'yi) temizleyelim
-            parcalar = satir.split()
-            if len(parcalar) > 1:
-                not_detayi = " ".join(parcalar[1:]) # "Ara Sınav 100"
-                
-                yeni_format = f"📘 {son_ders}\n   ✅ {not_detayi}"
-                
-                # Listede aynısı yoksa ekle
-                if yeni_format not in temiz_liste:
-                    temiz_liste.append(yeni_format)
-        
-        # 2. DERS ADI MI? (Büyük harfliyse ve rakamla başlamıyorsa derstir)
-        elif satir.isupper() and len(satir) > 4:
-            son_ders = satir
-
-    return "\n".join(temiz_liste)
-
 def farklari_bul(eski, yeni):
-    # Sadece 📘 ile başlayan satırları kıyasla
+    # Sadece yeni eklenen satırları (+ ile başlayanları) bul
     diff = difflib.ndiff(eski.splitlines(), yeni.splitlines())
-    return [l[2:].strip() for l in diff if l.startswith('+ ') and "📘" in l]
+    return [l[2:].strip() for l in diff if l.startswith('+ ') and len(l) > 2]
 
 def robotu_calistir():
     print("🚀 GitHub Robotu Çalışıyor...")
     
+    # GitHub ayarları (Ekran yok, sessiz mod)
     chrome_options = Options()
     chrome_options.add_argument("--headless") 
     chrome_options.add_argument("--no-sandbox")
@@ -90,7 +43,7 @@ def robotu_calistir():
     driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options)
 
     try:
-        # GİRİŞ İŞLEMLERİ
+        # 1. GİRİŞ
         driver.get("https://sabis.sakarya.edu.tr")
         time.sleep(2)
         driver.find_element(By.ID, "UserName").send_keys(OKUL_NO)
@@ -98,17 +51,22 @@ def robotu_calistir():
         driver.find_element(By.ID, "btnLogin").click()
         time.sleep(3)
         
+        # 2. OBS VE ÇİFT GİRİŞ KONTROLÜ (Zorba Mod)
         driver.get(HEDEF_LINK)
         time.sleep(3)
 
+        # Eğer giriş sayfasına attıysa (Login başlığı varsa)
         if "Login" in driver.current_url or "Giriş" in driver.title:
+            print("İkinci giriş gerekiyor...")
             try:
+                # Bazen direkt kırmızı butona basmak gerekir
                 driver.get("https://sabis.sakarya.edu.tr")
                 time.sleep(2)
                 driver.find_element(By.XPATH, "//*[contains(text(), 'ÖĞRENCİ BİLGİ SİSTEMİ')]").click()
                 time.sleep(5)
             except: pass
 
+            # İkinci şifreyi gir (Identity Server)
             try:
                 kullanici = driver.find_elements(By.CSS_SELECTOR, "input[type='text']")
                 if not kullanici: kullanici = driver.find_elements(By.CSS_SELECTOR, "input[type='email']")
@@ -121,32 +79,33 @@ def robotu_calistir():
                         sifre[0].send_keys(SIFRE)
                         time.sleep(1)
                         sifre[0].send_keys(Keys.ENTER)
+                        # Garanti olsun diye butona da tıkla
                         try:
                             driver.execute_script("arguments[0].click();", driver.find_element(By.CSS_SELECTOR, "button[type='submit']"))
                         except: pass
             except: pass
             
             time.sleep(5)
-            driver.get(HEDEF_LINK)
+            driver.get(HEDEF_LINK) # Tekrar ders sayfasına git
         
         time.sleep(5)
         
-        # VERİYİ ÇEK VE İŞLE
-        ham_veri = driver.find_element(By.TAG_NAME, "body").text
-        yeni_veri = veriyi_guzellestir(ham_veri)
+        # 3. VERİ ÇEKME VE KIYASLAMA
+        yeni_veri = driver.find_element(By.TAG_NAME, "body").text
         
+        # Dosya yoksa oluştur (İlk çalışma)
         if not os.path.exists(KAYIT_DOSYASI):
             with open(KAYIT_DOSYASI, "w", encoding="utf-8") as f: f.write(yeni_veri)
-            # İlk seferde tüm notları görmek için bunu açtım:
-            bildirim_gonder("✅ Sistem Hazır! İşte mevcut notların:\n\n" + yeni_veri)
+            bildirim_gonder("✅ GitHub Sistem Başlatıldı! İlk kayıt alındı. (20 dk modu)")
         else:
             with open(KAYIT_DOSYASI, "r", encoding="utf-8") as f: eski_veri = f.read()
             
             if yeni_veri != eski_veri:
                 degisiklikler = farklari_bul(eski_veri, yeni_veri)
                 if degisiklikler:
-                    mesaj = "📢 YENİ NOT GİRİLDİ!\n\n" + "\n\n".join(degisiklikler) + "\n\n🔗 obs.sabis.sakarya.edu.tr/Ders"
+                    mesaj = "📢 YENİ NOT GİRİLDİ!\n\n" + "\n".join(degisiklikler) + "\n\n🔗 obs.sabis.sakarya.edu.tr/Ders"
                     bildirim_gonder(mesaj)
+                    # Dosyayı güncelle
                     with open(KAYIT_DOSYASI, "w", encoding="utf-8") as f: f.write(yeni_veri)
             else:
                 print("Değişiklik yok.")
@@ -157,4 +116,8 @@ def robotu_calistir():
         driver.quit()
 
 if __name__ == "__main__":
+
     robotu_calistir()
+    
+    
+    

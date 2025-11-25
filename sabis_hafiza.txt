@@ -1,52 +1,102 @@
-📘 ELEKTROMANYETİK ALAN TEORİSİ
-   ✅ Ara Sınav
-📘 ELEKTROMANYETİK ALAN TEORİSİ
-   ✅ Final
-📘 İŞARETLER VE SİSTEMLER
-   ✅ Ara Sınav
-📘 İŞARETLER VE SİSTEMLER
-   ✅ Kısa Sınav
-📘 İŞARETLER VE SİSTEMLER
-   ✅ Final
-📘 ELEKTRİK MAKİNELERİ I
-   ✅ Ara Sınav
-📘 ELEKTRİK MAKİNELERİ I
-   ✅ Final
-📘 ELEKTRONİK III
-   ✅ Ara Sınav
-📘 ELEKTRONİK III
-   ✅ Kısa Sınav
-📘 ELEKTRONİK III
-   ✅ Ödev
-📘 ELEKTRONİK III
-   ✅ Performans Görevi (Uygulama)
-📘 ELEKTRONİK III
-   ✅ Final
-📘 ELEKTRİK ENERJİSİ ÜRETİMİ
-   ✅ Ara Sınav
-📘 ELEKTRİK ENERJİSİ ÜRETİMİ
-   ✅ Ödev
-📘 ELEKTRİK ENERJİSİ ÜRETİMİ
-   ✅ Final
-📘 STAJ II
-   ✅ Ara Sınav
-📘 STAJ II
-   ✅ Final
-📘 KİŞİSEL GELİŞİM
-   ✅ Ara Sınav 96
-📘 KİŞİSEL GELİŞİM
-   ✅ Ödev
-📘 KİŞİSEL GELİŞİM
-   ✅ Final
-📘 DİFERANSİYEL DENKLEMLER
-   ✅ Ara Sınav
-📘 DİFERANSİYEL DENKLEMLER
-   ✅ Final
-📘 DİFERANSİYEL DENKLEMLER
-   ✅ Ara Sınav 100
-📘 DİJİTAL OKURYAZARLIK
-   ✅ Kısa Sınav 100
-📘 DİJİTAL OKURYAZARLIK
-   ✅ Kısa Sınav
-📘 DİJİTAL OKURYAZARLIK
-   ✅ Final
+Anasayfa
+Seçilen Dersler
+Ders Programı
+Sınav Takvimi
+Transkript
+Derse Yazılma
+Danışmanlık
+Başvuru İşlemleri
+Anketler
+Diğer İşlemler
+Azami Süre
+Enstitü
+Kütüphane
+Kart Bakiye
+Yardım ve S.S.S.
+Öğrenci Bilgi Sistemi
+ALPER MERCAN
+        2025
+        2024
+        2023
+        2022
+        2021
+        2020
+        2019
+        2018
+        2017
+        2016
+        2015
+     
+        Güz
+        Bahar
+        Yaz
+     EEM203
+ELEKTROMANYETİK ALAN TEORİSİ
+1. Öğretim C Grubu
+Oran Çalışma Tipi Not
+50 Ara Sınav
+50 Final
+EEM305
+İŞARETLER VE SİSTEMLER
+1. Öğretim A Grubu
+Oran Çalışma Tipi Not
+40 Ara Sınav
+10 Kısa Sınav
+50 Final
+EEM309
+ELEKTRİK MAKİNELERİ I
+2. Öğretim A Grubu
+Oran Çalışma Tipi Not
+50 Ara Sınav
+50 Final
+EEM421
+ELEKTRONİK III
+1. Öğretim A Grubu
+Oran Çalışma Tipi Not
+22 Ara Sınav
+8,8 Kısa Sınav
+7,7 Kısa Sınav
+8,8 Ödev
+7,7 Performans Görevi (Uygulama)
+45 Final
+EEM451
+ELEKTRİK ENERJİSİ ÜRETİMİ
+2. Öğretim A Grubu
+Oran Çalışma Tipi Not
+35 Ara Sınav
+15 Ödev
+50 Final
+EEM499
+STAJ II
+1. Öğretim A Grubu
+Oran Çalışma Tipi Not
+50 Ara Sınav
+50 Final
+IKY409
+KİŞİSEL GELİŞİM
+1. Öğretim A Grubu
+Oran Çalışma Tipi Not
+32 Ara Sınav 96
+8 Ödev
+60 Final
+MAT211
+DİFERANSİYEL DENKLEMLER
+1. Öğretim A Grubu
+Oran Çalışma Tipi Not
+50 Ara Sınav
+50 Final
+SAU012
+PROJE HAZIRLAMA VE YÖNETİMİ (MÜHENDİSLİK-FEN)
+1. Öğretim S Grubu
+Oran Çalışma Tipi Not
+50 Ara Sınav 100
+50 Final
+SAU200
+DİJİTAL OKURYAZARLIK
+1. Öğretim A Grubu
+Oran Çalışma Tipi Not
+20 Kısa Sınav 100
+20 Kısa Sınav
+60 Final
+© Sakarya Üniversitesi
+Bilgisayar Araştırma ve Uygulama Merkezi

@@ -15,88 +15,136 @@ Kart Bakiye
 Yardım ve S.S.S.
 Öğrenci Bilgi Sistemi
 ALPER MERCAN
-        2025
-        2024
-        2023
-        2022
-        2021
-        2020
-        2019
-        2018
-        2017
-        2016
-        2015
-     
-        Güz
-        Bahar
-        Yaz
-     EEM203
+👉 ALPER MERCAN 
+   ↳ 2025
+👉 ALPER MERCAN 
+   ↳ 2024
+👉 ALPER MERCAN 
+   ↳ 2023
+👉 ALPER MERCAN 
+   ↳ 2022
+👉 ALPER MERCAN 
+   ↳ 2021
+👉 ALPER MERCAN 
+   ↳ 2020
+👉 ALPER MERCAN 
+   ↳ 2019
+👉 ALPER MERCAN 
+   ↳ 2018
+👉 ALPER MERCAN 
+   ↳ 2017
+👉 ALPER MERCAN 
+   ↳ 2016
+👉 ALPER MERCAN 
+   ↳ 2015
+Güz
+Bahar
+Yaz
+EEM203
 ELEKTROMANYETİK ALAN TEORİSİ
-1. Öğretim C Grubu
+👉 ELEKTROMANYETİK ALAN TEORİSİ 
+   ↳ 1. Öğretim C Grubu
 Oran Çalışma Tipi Not
-50 Ara Sınav
-50 Final
+👉 Oran Çalışma Tipi Not 
+   ↳ 50 Ara Sınav
+👉 Oran Çalışma Tipi Not 
+   ↳ 50 Final
 EEM305
 İŞARETLER VE SİSTEMLER
-1. Öğretim A Grubu
+👉 İŞARETLER VE SİSTEMLER 
+   ↳ 1. Öğretim A Grubu
 Oran Çalışma Tipi Not
-40 Ara Sınav
-10 Kısa Sınav
-50 Final
+👉 Oran Çalışma Tipi Not 
+   ↳ 40 Ara Sınav
+👉 Oran Çalışma Tipi Not 
+   ↳ 10 Kısa Sınav
+👉 Oran Çalışma Tipi Not 
+   ↳ 50 Final
 EEM309
 ELEKTRİK MAKİNELERİ I
-2. Öğretim A Grubu
+👉 ELEKTRİK MAKİNELERİ I 
+   ↳ 2. Öğretim A Grubu
 Oran Çalışma Tipi Not
-50 Ara Sınav
-50 Final
+👉 Oran Çalışma Tipi Not 
+   ↳ 50 Ara Sınav
+👉 Oran Çalışma Tipi Not 
+   ↳ 50 Final
 EEM421
 ELEKTRONİK III
-1. Öğretim A Grubu
+👉 ELEKTRONİK III 
+   ↳ 1. Öğretim A Grubu
 Oran Çalışma Tipi Not
-22 Ara Sınav
-8,8 Kısa Sınav
-7,7 Kısa Sınav
-8,8 Ödev
-7,7 Performans Görevi (Uygulama)
-45 Final
+👉 Oran Çalışma Tipi Not 
+   ↳ 22 Ara Sınav
+👉 Oran Çalışma Tipi Not 
+   ↳ 8,8 Kısa Sınav
+👉 Oran Çalışma Tipi Not 
+   ↳ 7,7 Kısa Sınav
+👉 Oran Çalışma Tipi Not 
+   ↳ 8,8 Ödev
+👉 Oran Çalışma Tipi Not 
+   ↳ 7,7 Performans Görevi (Uygulama)
+👉 Oran Çalışma Tipi Not 
+   ↳ 45 Final
 EEM451
 ELEKTRİK ENERJİSİ ÜRETİMİ
-2. Öğretim A Grubu
+👉 ELEKTRİK ENERJİSİ ÜRETİMİ 
+   ↳ 2. Öğretim A Grubu
 Oran Çalışma Tipi Not
-35 Ara Sınav
-15 Ödev
-50 Final
+👉 Oran Çalışma Tipi Not 
+   ↳ 35 Ara Sınav
+👉 Oran Çalışma Tipi Not 
+   ↳ 15 Ödev
+👉 Oran Çalışma Tipi Not 
+   ↳ 50 Final
 EEM499
 STAJ II
-1. Öğretim A Grubu
+👉 STAJ II 
+   ↳ 1. Öğretim A Grubu
 Oran Çalışma Tipi Not
-50 Ara Sınav
-50 Final
+👉 Oran Çalışma Tipi Not 
+   ↳ 50 Ara Sınav
+👉 Oran Çalışma Tipi Not 
+   ↳ 50 Final
 IKY409
 KİŞİSEL GELİŞİM
-1. Öğretim A Grubu
+👉 KİŞİSEL GELİŞİM 
+   ↳ 1. Öğretim A Grubu
 Oran Çalışma Tipi Not
-32 Ara Sınav 96
-8 Ödev
-60 Final
+👉 Oran Çalışma Tipi Not 
+   ↳ 32 Ara Sınav 96
+👉 Oran Çalışma Tipi Not 
+   ↳ 8 Ödev
+👉 Oran Çalışma Tipi Not 
+   ↳ 60 Final
 MAT211
 DİFERANSİYEL DENKLEMLER
-1. Öğretim A Grubu
+👉 DİFERANSİYEL DENKLEMLER 
+   ↳ 1. Öğretim A Grubu
 Oran Çalışma Tipi Not
-50 Ara Sınav
-50 Final
+👉 Oran Çalışma Tipi Not 
+   ↳ 50 Ara Sınav
+👉 Oran Çalışma Tipi Not 
+   ↳ 50 Final
 SAU012
 PROJE HAZIRLAMA VE YÖNETİMİ (MÜHENDİSLİK-FEN)
-1. Öğretim S Grubu
+👉 PROJE HAZIRLAMA VE YÖNETİMİ (MÜHENDİSLİK-FEN) 
+   ↳ 1. Öğretim S Grubu
 Oran Çalışma Tipi Not
-50 Ara Sınav 100
-50 Final
+👉 Oran Çalışma Tipi Not 
+   ↳ 50 Ara Sınav 100
+👉 Oran Çalışma Tipi Not 
+   ↳ 50 Final
 SAU200
 DİJİTAL OKURYAZARLIK
-1. Öğretim A Grubu
+👉 DİJİTAL OKURYAZARLIK 
+   ↳ 1. Öğretim A Grubu
 Oran Çalışma Tipi Not
-20 Kısa Sınav 100
-20 Kısa Sınav
-60 Final
+👉 Oran Çalışma Tipi Not 
+   ↳ 20 Kısa Sınav 100
+👉 Oran Çalışma Tipi Not 
+   ↳ 20 Kısa Sınav
+👉 Oran Çalışma Tipi Not 
+   ↳ 60 Final
 © Sakarya Üniversitesi
 Bilgisayar Araştırma ve Uygulama Merkezi

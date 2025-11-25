@@ -89,7 +89,7 @@ SAU012
 PROJE HAZIRLAMA VE YÖNETİMİ (MÜHENDİSLİK-FEN)
 1. Öğretim S Grubu
 Oran Çalışma Tipi Not
-50 Ara Sınav
+50 Ara Sınav 100
 50 Final
 SAU200
 DİJİTAL OKURYAZARLIK

@@ -47,7 +47,7 @@ EEM309
 ELEKTRİK MAKİNELERİ I
 2. Öğretim A Grubu
 Oran Çalışma Tipi Not
-50 Ara Sınav
+50 Ara Sınav 92
 50 Final
 EEM421
 ELEKTRONİK III

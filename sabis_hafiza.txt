@@ -63,7 +63,7 @@ EEM451
 ELEKTRİK ENERJİSİ ÜRETİMİ
 2. Öğretim A Grubu
 Oran Çalışma Tipi Not
-35 Ara Sınav
+35 Ara Sınav 90
 15 Ödev
 50 Final
 EEM499

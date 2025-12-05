@@ -96,7 +96,7 @@ DİJİTAL OKURYAZARLIK
 1. Öğretim A Grubu
 Oran Çalışma Tipi Not
 20 Kısa Sınav 100
-20 Kısa Sınav
+20 Kısa Sınav 100
 60 Final
 © Sakarya Üniversitesi
 Bilgisayar Araştırma ve Uygulama Merkezi

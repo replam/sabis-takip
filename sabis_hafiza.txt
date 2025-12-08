@@ -40,7 +40,7 @@ EEM305
 İŞARETLER VE SİSTEMLER
 1. Öğretim A Grubu
 Oran Çalışma Tipi Not
-40 Ara Sınav 45
+40 Ara Sınav 48
 10 Kısa Sınav
 50 Final
 EEM309

@@ -83,7 +83,7 @@ MAT211
 DİFERANSİYEL DENKLEMLER
 1. Öğretim A Grubu
 Oran Çalışma Tipi Not
-50 Ara Sınav
+50 Ara Sınav GR
 50 Final
 SAU012
 PROJE HAZIRLAMA VE YÖNETİMİ (MÜHENDİSLİK-FEN)

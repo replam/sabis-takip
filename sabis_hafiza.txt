@@ -53,9 +53,9 @@ EEM421
 ELEKTRONİK III
 1. Öğretim A Grubu
 Oran Çalışma Tipi Not
-22 Ara Sınav
-8,8 Kısa Sınav
-7,7 Kısa Sınav
+22 Ara Sınav 83
+8,8 Kısa Sınav 80
+7,7 Kısa Sınav 98
 8,8 Ödev
 7,7 Performans Görevi (Uygulama) 100
 45 Final

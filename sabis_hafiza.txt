@@ -34,8 +34,8 @@ ALPER MERCAN
 ELEKTROMANYETİK ALAN TEORİSİ
 1. Öğretim C Grubu
 Oran Çalışma Tipi Not
-50 Ara Sınav 16
-50 Final
+30 Ara Sınav 16
+70 Final
 EEM305
 İŞARETLER VE SİSTEMLER
 1. Öğretim A Grubu

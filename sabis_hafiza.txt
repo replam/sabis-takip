@@ -84,7 +84,7 @@ DİFERANSİYEL DENKLEMLER
 1. Öğretim A Grubu
 Oran Çalışma Tipi Not
 50 Ara Sınav GR
-50 Final
+50 Final GR
 SAU012
 PROJE HAZIRLAMA VE YÖNETİMİ (MÜHENDİSLİK-FEN)
 1. Öğretim S Grubu

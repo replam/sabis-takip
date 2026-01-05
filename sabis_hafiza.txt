@@ -91,6 +91,7 @@ PROJE HAZIRLAMA VE YÖNETİMİ (MÜHENDİSLİK-FEN)
 Oran Çalışma Tipi Not
 50 Ara Sınav 100
 50 Final 89
+Başarı Notu Anket Doldur
 SAU200
 DİJİTAL OKURYAZARLIK
 1. Öğretim A Grubu

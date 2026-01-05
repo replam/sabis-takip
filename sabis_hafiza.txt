@@ -90,13 +90,13 @@ PROJE HAZIRLAMA VE YÖNETİMİ (MÜHENDİSLİK-FEN)
 1. Öğretim S Grubu
 Oran Çalışma Tipi Not
 50 Ara Sınav 100
-50 Final
+50 Final 89
 SAU200
 DİJİTAL OKURYAZARLIK
 1. Öğretim A Grubu
 Oran Çalışma Tipi Not
 20 Kısa Sınav 100
 20 Kısa Sınav 100
-60 Final
+60 Final 96
 © Sakarya Üniversitesi
 Bilgisayar Araştırma ve Uygulama Merkezi

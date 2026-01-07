@@ -41,7 +41,7 @@ EEM305
 1. Öğretim A Grubu
 Oran Çalışma Tipi Not
 40 Ara Sınav 48
-10 Kısa Sınav
+10 Kısa Sınav 100
 50 Final
 EEM309
 ELEKTRİK MAKİNELERİ I

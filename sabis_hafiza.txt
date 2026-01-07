@@ -77,8 +77,8 @@ KİŞİSEL GELİŞİM
 1. Öğretim A Grubu
 Oran Çalışma Tipi Not
 32 Ara Sınav 96
-8 Ödev
-60 Final
+8 Ödev 100
+60 Final 96
 MAT211
 DİFERANSİYEL DENKLEMLER
 1. Öğretim A Grubu

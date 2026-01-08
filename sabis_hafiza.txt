@@ -65,7 +65,7 @@ ELEKTRİK ENERJİSİ ÜRETİMİ
 Oran Çalışma Tipi Not
 35 Ara Sınav 90
 15 Ödev 100
-50 Final
+50 Final 100
 EEM499
 STAJ II
 1. Öğretim A Grubu

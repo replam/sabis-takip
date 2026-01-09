@@ -85,6 +85,7 @@ DİFERANSİYEL DENKLEMLER
 Oran Çalışma Tipi Not
 50 Ara Sınav GR
 50 Final GR
+50 Bütünleme
 Başarı Notu GR
 SAU012
 PROJE HAZIRLAMA VE YÖNETİMİ (MÜHENDİSLİK-FEN)

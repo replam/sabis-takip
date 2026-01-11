@@ -1,105 +1,11 @@
-Anasayfa
-Seçilen Dersler
-Ders Programı
-Sınav Takvimi
-Transkript
-Derse Yazılma
-Danışmanlık
-Başvuru İşlemleri
-Anketler
-Diğer İşlemler
-Azami Süre
-Enstitü
+Yemek Menüsü
+Akademik Takvim
+Telefon Rehberi
 Kütüphane
-Kart Bakiye
-Yardım ve S.S.S.
-Öğrenci Bilgi Sistemi
-ALPER MERCAN
-        2025
-        2024
-        2023
-        2022
-        2021
-        2020
-        2019
-        2018
-        2017
-        2016
-        2015
-     
-        Güz
-        Bahar
-        Yaz
-     EEM203
-ELEKTROMANYETİK ALAN TEORİSİ
-1. Öğretim C Grubu
-Oran Çalışma Tipi Not
-30 Ara Sınav 16
-70 Final
-EEM305
-İŞARETLER VE SİSTEMLER
-1. Öğretim A Grubu
-Oran Çalışma Tipi Not
-40 Ara Sınav 48
-10 Kısa Sınav 100
-50 Final
-EEM309
-ELEKTRİK MAKİNELERİ I
-2. Öğretim A Grubu
-Oran Çalışma Tipi Not
-50 Ara Sınav 92
-50 Final 82
-EEM421
-ELEKTRONİK III
-1. Öğretim A Grubu
-Oran Çalışma Tipi Not
-22 Ara Sınav 83
-8,8 Kısa Sınav 80
-7,7 Kısa Sınav 98
-8,8 Ödev 96
-7,7 Performans Görevi (Uygulama) 100
-45 Final 76
-EEM451
-ELEKTRİK ENERJİSİ ÜRETİMİ
-2. Öğretim A Grubu
-Oran Çalışma Tipi Not
-35 Ara Sınav 90
-15 Ödev 100
-50 Final 100
-EEM499
-STAJ II
-1. Öğretim A Grubu
-Oran Çalışma Tipi Not
-50 Ara Sınav
-50 Final
-IKY409
-KİŞİSEL GELİŞİM
-1. Öğretim A Grubu
-Oran Çalışma Tipi Not
-32 Ara Sınav 96
-8 Ödev 100
-60 Final 96
-MAT211
-DİFERANSİYEL DENKLEMLER
-1. Öğretim A Grubu
-Oran Çalışma Tipi Not
-50 Ara Sınav GR
-50 Final GR
-50 Bütünleme
-Başarı Notu GR
-SAU012
-PROJE HAZIRLAMA VE YÖNETİMİ (MÜHENDİSLİK-FEN)
-1. Öğretim S Grubu
-Oran Çalışma Tipi Not
-50 Ara Sınav 100
-50 Final 89
-Başarı Notu AA
-SAU200
-DİJİTAL OKURYAZARLIK
-1. Öğretim A Grubu
-Oran Çalışma Tipi Not
-20 Kısa Sınav 100
-20 Kısa Sınav 100
-60 Final 96
-© Sakarya Üniversitesi
-Bilgisayar Araştırma ve Uygulama Merkezi
+Öğrenci İşleri
+© 2020 Bilgisayar Araştırma ve Uygulama Merkezi
+SABİS
+Sakarya Üniversitesi Bilgi Sistemi
+Beni Hatırla
+e-Devlet ile Giriş Yap
+Giriş Yap

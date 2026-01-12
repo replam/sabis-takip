@@ -70,8 +70,8 @@ EEM499
 STAJ II
 1. Öğretim A Grubu
 Oran Çalışma Tipi Not
-50 Ara Sınav
-50 Final
+50 Ara Sınav 0
+50 Final 0
 IKY409
 KİŞİSEL GELİŞİM
 1. Öğretim A Grubu

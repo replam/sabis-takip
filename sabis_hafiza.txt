@@ -79,7 +79,7 @@ Oran Çalışma Tipi Not
 32 Ara Sınav 96
 8 Ödev 100
 60 Final 96
-Başarı Notu Anket Doldur
+Başarı Notu AA
 MAT211
 DİFERANSİYEL DENKLEMLER
 1. Öğretim A Grubu

@@ -49,6 +49,7 @@ ELEKTRİK MAKİNELERİ I
 Oran Çalışma Tipi Not
 50 Ara Sınav 92
 50 Final 82
+Başarı Notu AA
 EEM421
 ELEKTRONİK III
 1. Öğretim A Grubu

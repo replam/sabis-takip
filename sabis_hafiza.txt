@@ -60,6 +60,7 @@ Oran Çalışma Tipi Not
 8,8 Ödev 96
 7,7 Performans Görevi (Uygulama) 100
 45 Final 76
+Başarı Notu BA
 EEM451
 ELEKTRİK ENERJİSİ ÜRETİMİ
 2. Öğretim A Grubu

@@ -36,6 +36,7 @@ ELEKTROMANYETİK ALAN TEORİSİ
 Oran Çalışma Tipi Not
 30 Ara Sınav 16
 70 Final 98
+Başarı Notu BB
 EEM305
 İŞARETLER VE SİSTEMLER
 1. Öğretim A Grubu

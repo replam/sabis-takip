@@ -30,5 +30,55 @@ ALPER MERCAN
         Güz
         Bahar
         Yaz
-     © Sakarya Üniversitesi
+     EEM308
+OTOMATİK KONTROL
+1. Öğretim B Grubu
+Oran Çalışma Tipi Not
+32 Ara Sınav
+4 Kısa Sınav
+60 Final
+EEM310
+ELEKTRİK MAKİNELERİ II
+1. Öğretim B Grubu
+Oran Çalışma Tipi Not
+50 Ara Sınav
+50 Final
+EEM312
+GÜÇ ELEKTRONİĞİ
+1. Öğretim A Grubu
+Oran Çalışma Tipi Not
+45 Ara Sınav
+50 Final
+EEM430
+ANTENLER VE YAYILMA
+1. Öğretim A Grubu
+Oran Çalışma Tipi Not
+50 Ara Sınav
+50 Final
+EEM442
+ENDÜSTRİYEL KONTROL
+1. Öğretim A Grubu
+Oran Çalışma Tipi Not
+28 Ara Sınav
+12 Ödev
+60 Final
+EEM454
+ELEKTRİK ENERJİ DAĞITIMI
+2. Öğretim A Grubu
+Oran Çalışma Tipi Not
+35 Ara Sınav
+15 Ödev
+50 Final
+MAT216
+SAYISAL ANALİZ
+1. Öğretim B Grubu
+Oran Çalışma Tipi Not
+36 Ara Sınav
+60 Final
+SAU451
+EBEVEYNLİĞE HAZIRLIK
+1. Öğretim A Grubu
+Oran Çalışma Tipi Not
+50 Final
+© Sakarya Üniversitesi
 Bilgisayar Araştırma ve Uygulama Merkezi

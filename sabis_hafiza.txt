@@ -49,14 +49,6 @@ GÜÇ ELEKTRONİĞİ
 Oran Çalışma Tipi Not
 45 Ara Sınav
 50 Final
-EEM426
-ELEKTRİK MAKİNELERİ VE GÜÇ ELEKTRONİĞİ LABORATUVARI
-1. Öğretim A Grubu
-Oran Çalışma Tipi Not
-15 Performans Görevi (Laboratuvar)
-15 Performans Görevi (Laboratuvar)
-40 Final
-0 İş Sağlığı ve Güvenliği
 EEM428
 ELEKTRİK TESİSLERİNDE KORUMA
 2. Öğretim A Grubu
@@ -66,6 +58,12 @@ Oran Çalışma Tipi Not
 6 Kısa Sınav
 12 Ödev
 40 Final
+EEM430
+ANTENLER VE YAYILMA
+1. Öğretim A Grubu
+Oran Çalışma Tipi Not
+50 Ara Sınav
+50 Final
 EEM454
 ELEKTRİK ENERJİ DAĞITIMI
 2. Öğretim A Grubu
@@ -84,9 +82,5 @@ EBEVEYNLİĞE HAZIRLIK
 1. Öğretim A Grubu
 Oran Çalışma Tipi Not
 50 Final
-TAR348
-ROMA KRALLIK VE CUMHURİYET TARİHİ
-1. Öğretim A Grubu
-Oran Çalışma Tipi Not
 © Sakarya Üniversitesi
 Bilgisayar Araştırma ve Uygulama Merkezi

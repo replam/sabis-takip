@@ -77,10 +77,12 @@ SAYISAL ANALİZ
 Oran Çalışma Tipi Not
 36 Ara Sınav
 60 Final
-SAU451
-EBEVEYNLİĞE HAZIRLIK
-1. Öğretim A Grubu
+SAU027
+YANGIN GÜVENLİĞİ
+1. Öğretim B Grubu
 Oran Çalışma Tipi Not
-50 Final
+20 Kısa Sınav
+20 Kısa Sınav
+60 Final
 © Sakarya Üniversitesi
 Bilgisayar Araştırma ve Uygulama Merkezi

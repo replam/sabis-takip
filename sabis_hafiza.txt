@@ -81,7 +81,7 @@ MAT216
 SAYISAL ANALİZ
 1. Öğretim B Grubu
 Oran Çalışma Tipi Not
-36 Ara Sınav
+40 Ara Sınav
 60 Final
 SAU027
 YANGIN GÜVENLİĞİ

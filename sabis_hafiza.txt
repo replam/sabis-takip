@@ -1,11 +1,94 @@
-Yemek Menüsü
-Akademik Takvim
-Telefon Rehberi
+Anasayfa
+Seçilen Dersler
+Ders Programı
+Sınav Takvimi
+Transkript
+Derse Yazılma
+Danışmanlık
+Başvuru İşlemleri
+Anketler
+Diğer İşlemler
+Azami Süre
+Enstitü
 Kütüphane
-Öğrenci İşleri
-© 2020 Bilgisayar Araştırma ve Uygulama Merkezi
-SABİS
-Sakarya Üniversitesi Bilgi Sistemi
-Beni Hatırla
-e-Devlet ile Giriş Yap
-Giriş Yap
+Kart Bakiye
+Yardım ve S.S.S.
+Öğrenci Bilgi Sistemi
+ALPER MERCAN
+        2025
+        2024
+        2023
+        2022
+        2021
+        2020
+        2019
+        2018
+        2017
+        2016
+        2015
+     
+        Güz
+        Bahar
+        Yaz
+     EEM308
+OTOMATİK KONTROL
+1. Öğretim B Grubu
+Oran Çalışma Tipi Not
+32 Ara Sınav
+4 Kısa Sınav
+60 Final
+EEM310
+ELEKTRİK MAKİNELERİ II
+1. Öğretim B Grubu
+Oran Çalışma Tipi Not
+50 Ara Sınav
+50 Final
+EEM312
+GÜÇ ELEKTRONİĞİ
+1. Öğretim A Grubu
+Oran Çalışma Tipi Not
+45 Ara Sınav
+50 Final
+EEM428
+ELEKTRİK TESİSLERİNDE KORUMA
+2. Öğretim A Grubu
+Oran Çalışma Tipi Not
+36 Ara Sınav
+6 Kısa Sınav
+6 Kısa Sınav
+12 Ödev
+40 Final
+EEM430
+ANTENLER VE YAYILMA
+1. Öğretim A Grubu
+Oran Çalışma Tipi Not
+50 Ara Sınav
+50 Final
+EEM454
+ELEKTRİK ENERJİ DAĞITIMI
+2. Öğretim A Grubu
+Oran Çalışma Tipi Not
+35 Ara Sınav
+15 Ödev
+50 Final
+GZT023
+KİŞİLERARASI İLETİŞİM
+1. Öğretim A Grubu
+Oran Çalışma Tipi Not
+50 Ara Sınav
+50 Final
+MAT216
+SAYISAL ANALİZ
+1. Öğretim B Grubu
+Oran Çalışma Tipi Not
+40 Ara Sınav
+60 Final
+SAU027
+YANGIN GÜVENLİĞİ
+1. Öğretim A Grubu
+Oran Çalışma Tipi Not
+20 Kısa Sınav
+20 Kısa Sınav
+60 Final
+© Sakarya Üniversitesi
+Bilgisayar Araştırma ve Uygulama Merkezi

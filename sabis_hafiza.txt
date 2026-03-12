@@ -47,7 +47,7 @@ EEM312
 GÜÇ ELEKTRONİĞİ
 1. Öğretim A Grubu
 Oran Çalışma Tipi Not
-45 Ara Sınav
+50 Ara Sınav
 50 Final
 EEM428
 ELEKTRİK TESİSLERİNDE KORUMA

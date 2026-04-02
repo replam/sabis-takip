@@ -54,7 +54,7 @@ ELEKTRİK TESİSLERİNDE KORUMA
 2. Öğretim A Grubu
 Oran Çalışma Tipi Not
 36 Ara Sınav
-6 Kısa Sınav
+6 Kısa Sınav 90
 6 Kısa Sınav
 12 Ödev
 40 Final

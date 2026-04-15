@@ -35,7 +35,7 @@ OTOMATİK KONTROL
 1. Öğretim B Grubu
 Oran Çalışma Tipi Not
 32 Ara Sınav
-4 Kısa Sınav
+8 Kısa Sınav
 60 Final
 EEM310
 ELEKTRİK MAKİNELERİ II

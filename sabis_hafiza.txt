@@ -75,7 +75,7 @@ GZT023
 KİŞİLERARASI İLETİŞİM
 1. Öğretim A Grubu
 Oran Çalışma Tipi Not
-50 Ara Sınav
+50 Ara Sınav 75
 50 Final
 MAT216
 SAYISAL ANALİZ

@@ -41,7 +41,7 @@ EEM310
 ELEKTRİK MAKİNELERİ II
 1. Öğretim B Grubu
 Oran Çalışma Tipi Not
-50 Ara Sınav
+50 Ara Sınav 92
 50 Final
 EEM312
 GÜÇ ELEKTRONİĞİ

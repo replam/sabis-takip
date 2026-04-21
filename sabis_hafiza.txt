@@ -68,7 +68,7 @@ EEM454
 ELEKTRİK ENERJİ DAĞITIMI
 2. Öğretim A Grubu
 Oran Çalışma Tipi Not
-35 Ara Sınav
+35 Ara Sınav 70
 15 Ödev
 50 Final
 GZT023
